@@ -26,6 +26,8 @@ while True:
     if sintoma == "fim":
         print("Obrigado, volte sempre")
         break
-        
+
+    sintomas_agrupados.append(sintoma)
+    
 
 
