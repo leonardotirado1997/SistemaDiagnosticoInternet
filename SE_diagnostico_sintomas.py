@@ -28,6 +28,18 @@ while True:
         break
 
     sintomas_agrupados.append(sintoma)
-    
+
+print ("\n Analisando...")
+
+encontrou = False
+
+for regra, diagnostico in regras.items():
+    if all(s in sintomas_agrupados for s in regra):
+        print(f"Diagnóstico Sugerido: {diagnostico}")
+        encontrou = True
+
+if not encontrou:
+    print("Deve ser virose")        
+
 
 
