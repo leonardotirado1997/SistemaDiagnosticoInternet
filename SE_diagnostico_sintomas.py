@@ -21,3 +21,11 @@ sintomas_agrupados = []
 # Pergunta os sintomas até a pessoa digitar FIM
 while True:
     sintoma = input('Informe um sintoma ou fim \n Sintomas Disponiveis: \n("febre", "tosse", "dor_garganta", "febre", "vomito", "dor_estomago"): ')
+
+    # Se o usuario digitar fim, iremos sair do sistema
+    if sintoma == "fim":
+        print("Obrigado, volte sempre")
+        break
+        
+
+
